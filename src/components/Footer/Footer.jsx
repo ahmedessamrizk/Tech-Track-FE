@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
 
@@ -25,24 +24,12 @@ export default function Footer() {
                     <span className='aboutSpan'>Ticketing</span>
                     <span className='aboutSpan'>Call center</span>
                 </div>
-                {/* <div className="Footer-FAQ">
-                    <h2>FAQ</h2>
-                    <span className='aboutSpan'>Account</span>
-                    <span className='aboutSpan'>Booking</span>
-                    <span className='aboutSpan'>Payments</span>
-                    <span className='aboutSpan'>Returns</span>
-                    <span className='aboutSpan'>Privacy Policy</span>
-                    <span className='aboutSpan'>Terms & Conditions</span>
-                </div> */}
+
             </div>
             <div className="footer-half2">
                 <h2>Newsletter</h2>
                 <p>Don't miss out on the exciting world of travel - subscribe now and embark on a journey of discovery with us .</p>
-                {/* <div className="footer-input">
-                    <span ><EmailIcon /></span>
-                    <input className='footer-textInput' placeholder='Enter Your Email' />
-                    <button>Submit</button>
-                </div> */}
+
             </div>
         </div>
     </>
