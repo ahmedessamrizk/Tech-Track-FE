@@ -1,0 +1,77 @@
+.Footer-container {
+  padding: 55px 85px;
+  background-color: #1a1e29;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "CustomFont4", Arial, sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.aboutSpan {
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+  color: var(--middle-gray-color);
+}
+.footer-half1 {
+  display: flex;
+}
+.Footer-about,
+.Footer-support,
+.Footer-FAQ {
+  margin: 0px 35px;
+}
+.footer-half2 {
+  padding: 0px 55px;
+  width: 40%;
+}
+.footer-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  z-index: 0;
+}
+.footer-textInput {
+  padding: 0 25% 0px 35px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #888888;
+  height: 30px;
+  color: white;
+}
+.footer-half2 span {
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  color: #00c38e;
+}
+.footer-half2 p {
+  color: var(--middle-gray-color);
+}
+.footer-input button {
+  position: absolute;
+  border: none;
+  border-radius: 20px;
+  width: 22%;
+  right: 5px;
+  background-color: #00c38e;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .footer-half2 {
+    padding: 0px 55px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Footer-container {
+    padding: 25px 20px;
+  }
+  .aboutSpan {
+    font-size: 14px;
+  }
+}

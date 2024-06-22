@@ -1,0 +1,5 @@
+.profile {
+  height: calc(100vh - 67px);
+  display: flex;
+  margin: 67px 0px 0px;
+}

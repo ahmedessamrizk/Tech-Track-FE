@@ -1,0 +1,105 @@
+.profile-content {
+  margin: 30px 0px 30px 30px;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "CustomFont2", Arial, sans-serif;
+  overflow: auto;
+}
+.profile-action-buttons {
+  width: 100%;
+}
+.profile-content button {
+  margin: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #00c38e;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.profile-content a {
+  text-decoration: none;
+  color: white;
+}
+.profile-content-fields {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.single-data-field input {
+  font-family: "CustomFont2", Arial, sans-serif;
+  background-color: var(--light-gray-color);
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray-color);
+  width: 100%;
+  font-size: 1.5rem;
+}
+.profile-content h1 {
+  text-transform: uppercase;
+  margin: auto;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+.profile-submit-button {
+  width: 100%;
+}
+.error-buttons-update .validationError {
+  color: rgb(197, 69, 69);
+  text-transform: uppercase;
+}
+.error-buttons-update {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .profile-content {
+    width: calc(100% - 280px);
+  }
+  .email-update {
+    width: 60% !important;
+  }
+}
+@media (max-width: 992px) {
+  .email-update {
+    width: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  .profile-content button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .profile-content {
+    width: calc(100% - 200px);
+  }
+  .email-update {
+    width: 80% !important;
+  }
+  .profile-content h1 {
+    font-size: 24px;
+  }
+  .error-buttons-update .validationError {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .validationErrorContainer {
+    width: 100%;
+  }
+  .error-buttons-update {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .buttons {
+    margin: auto;
+  }
+}

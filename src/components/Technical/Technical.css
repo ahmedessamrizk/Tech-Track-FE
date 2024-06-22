@@ -1,0 +1,396 @@
+.technical {
+  text-align: center;
+  margin: 67px 0px 0px;
+}
+.right {
+  height: calc(100vh - 67px);
+  background-size: 40% 80%;
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  color: var(--primary-color);
+}
+.right-content {
+  width: 60%;
+  text-align: start;
+  padding-left: 30px;
+}
+.right-content h1,
+.left-content h1 {
+  text-transform: uppercase;
+  font-size: 90px;
+  font-family: "CustomFont";
+}
+.right-content p,
+.left-content p {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "CustomFont2";
+  padding: 10px 20px 10px 0px;
+}
+.right-content p a {
+  font-size: 22px;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--light-blue-color);
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.right-content p a:hover {
+  box-shadow: 10px 10px 5px rgba(19, 45, 70, 0.6);
+}
+.right-content .description,
+.left-content .description {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+.left {
+  height: calc(100vh - 67px);
+  background-size: 35% 80%;
+  background-position: 0% center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+.left-content {
+  width: 60%;
+  text-align: start;
+}
+.left-content p a {
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--light-blue-color);
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+.left-content p a:hover {
+  box-shadow: 10px 10px 5px rgba(217, 217, 217, 0.6);
+}
+.left-content ul,
+.right-content ul {
+  margin-left: 20px;
+}
+.left-content ul li,
+.right-content ul li {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "CustomFont2";
+  letter-spacing: 1px;
+}
+.left-content ul li::marker,
+.right-content ul li::marker {
+  color: var(--secondary-color);
+}
+.white-comparison,
+.black-comparison {
+  height: calc(100vh - 67px);
+  display: flex;
+  flex-direction: column;
+}
+.black-comparison {
+  background-color: var(--primary-color);
+}
+.white-comparison .MuiBottomNavigationAction-root {
+  width: 40% !important;
+  max-width: 40% !important;
+  height: 60px;
+}
+.white-comparison .MuiBottomNavigationAction-label {
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: "CustomFont";
+  cursor: pointer;
+  font-size: 35px;
+}
+.white-comparison .Mui-selected {
+  font-size: 25px !important;
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--primary-color) !important;
+}
+.black-comparison .MuiBottomNavigationAction-root {
+  width: 50% !important;
+  max-width: 50% !important;
+  height: 60px;
+  background-color: var(--primary-color);
+}
+.black-comparison .Mui-selected {
+  font-size: 25px !important;
+  color: white !important;
+  border-bottom: 2px solid white !important;
+}
+.black-comparison .MuiBottomNavigationAction-label {
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: "CustomFont";
+  cursor: pointer;
+  font-size: 35px;
+  color: var(--light-gray-color);
+}
+.black-comparison-content {
+  width: 80%;
+  margin: auto;
+}
+.right-comparison {
+  height: calc(100vh - 143px);
+  margin-top: 20px;
+}
+.left-comparison {
+  height: calc(100vh - 123px);
+}
+.left-content li button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+  transition: text-shadow 0.3s ease;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.left-content li button:hover {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 1400px) {
+  .right-content h1,
+  .left-content h1 {
+    font-size: 70px;
+  }
+  .right-content p,
+  .left-content p {
+    font-size: 22px;
+    padding: 10px 20px 10px 0px;
+  }
+  .right-content p a {
+    font-size: 20px;
+  }
+  .left-content p a {
+    font-size: 20px;
+  }
+  .left-content ul li,
+  .right-content ul li {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "CustomFont2";
+    letter-spacing: 1px;
+  }
+  .white-comparison .MuiBottomNavigationAction-label {
+    font-size: 32px;
+  }
+  .black-comparison .MuiBottomNavigationAction-label {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .right-content h1,
+  .left-content h1 {
+    font-size: 60px;
+  }
+  .right-content p,
+  .left-content p {
+    font-size: 20px;
+    padding: 10px 20px 10px 0px;
+  }
+  .right-content p a {
+    font-size: 18px;
+  }
+  .left-content p a {
+    font-size: 18px;
+  }
+  .left-content ul li,
+  .right-content ul li {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "CustomFont2";
+    letter-spacing: 1px;
+  }
+  .white-comparison .MuiBottomNavigationAction-label {
+    font-size: 30px;
+  }
+  .black-comparison .MuiBottomNavigationAction-label {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .right-content h1,
+  .left-content h1 {
+    font-size: 50px;
+  }
+  .right-content p,
+  .left-content p {
+    font-size: 16px;
+    padding: 10px 20px 10px 0px;
+  }
+  .right-content p a {
+    font-size: 14px;
+  }
+  .left-content p a {
+    font-size: 14px;
+  }
+  .left-content ul li,
+  .right-content ul li {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "CustomFont2";
+    letter-spacing: 1px;
+  }
+  .right-content .description,
+  .left-content .description {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0px;
+  }
+  .white-comparison .MuiBottomNavigationAction-label {
+    font-size: 18px;
+  }
+  .black-comparison .MuiBottomNavigationAction-label {
+    font-size: 18px;
+  }
+  .white-comparison .Mui-selected {
+    font-size: 22px !important;
+  }
+  .black-comparison .Mui-selected {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 768px) {
+  .right,
+  .left {
+    align-items: center;
+    background-size: 40% 60%;
+  }
+  .right-content,
+  .left-content {
+    padding: 0px 10px;
+  }
+  .right-content h1,
+  .left-content h1 {
+    font-size: 30px;
+  }
+  .right-content p,
+  .left-content p {
+    font-size: 14px;
+    padding: 5px 20px 5px 0px;
+  }
+  .right-content p a {
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 70%;
+  }
+  .left-content p a {
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 70%;
+  }
+  .left-content ul li,
+  .right-content ul li {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "CustomFont2";
+    letter-spacing: 1px;
+  }
+  .right-content .description,
+  .left-content .description {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0px;
+  }
+  .white-comparison .MuiBottomNavigationAction-label {
+    font-size: 14px;
+  }
+  .black-comparison .MuiBottomNavigationAction-label {
+    font-size: 14px;
+  }
+  .white-comparison .Mui-selected {
+    font-size: 16px !important;
+  }
+  .black-comparison .Mui-selected {
+    font-size: 16px !important;
+  }
+}
+@media (max-height: 500px) {
+  .right,
+  .left {
+    align-items: center;
+    background-size: 30% 50%;
+  }
+  .right-content,
+  .left-content {
+    padding: 0px 10px;
+    width: 70%;
+  }
+  .right-content h1,
+  .left-content h1 {
+    font-size: 20px;
+  }
+  .right-content p,
+  .left-content p {
+    font-size: 10px;
+    padding: 5px 5px 5px 0px;
+  }
+  .right-content p a {
+    font-size: 10px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 70%;
+  }
+  .left-content p a {
+    font-size: 10px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 70%;
+  }
+  .left-content ul li,
+  .right-content ul li {
+    font-size: 8px;
+    font-weight: bold;
+    font-family: "CustomFont2";
+    letter-spacing: 1px;
+  }
+  .right-content .description,
+  .left-content .description {
+    font-size: 8px;
+    font-weight: bold;
+    margin: 5px 0px;
+  }
+  .white-comparison .MuiBottomNavigationAction-label {
+    font-size: 12px;
+  }
+  .black-comparison .MuiBottomNavigationAction-label {
+    font-size: 12px;
+  }
+  .white-comparison .Mui-selected {
+    font-size: 14px !important;
+  }
+  .black-comparison .Mui-selected {
+    font-size: 14px !important;
+  }
+}

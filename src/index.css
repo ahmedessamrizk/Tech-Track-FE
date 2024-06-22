@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont4";
+  src: url("./fonts/Oswald-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont5";
+  src: url("./fonts/Oswald-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont1";
+  src: url("./fonts/ARBFONTS-DINNEXTLTARABIC-HEAVY-1.TTF") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont2";
+  src: url("./fonts/ARBFONTS-DINNEXTLTARABIC-LIGHT-2-2.TTF") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont3";
+  src: url("./fonts/ARBFONTS-DINNEXTLTARABIC-ULTRALIGHT-4.TTF")
+    format("truetype");
+}
+@font-face {
+  font-family: "CustomFont6";
+  src: url("./fonts/ARBFONTS-DINNEXTLTARABIC-MEDIUM-4.TTF") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont7";
+  src: url("./fonts/ARBFONTS-DINNEXTLTARABIC-REGULAR-4.TTF") format("truetype");
+}
+:root {
+  --primary-color: #132d46; /* Define primary color */
+  --secondary-color: #00c38e; /* Define secondary color */
+  --dark-gray-color: #6a6e79; /* Define success color */
+  --middle-gray-color: #888888; /* Define success color */
+  --light-gray-color: rgb(217, 217, 217); /* Define success color */
+  --light-blue-color: #f3f6fb; /* Define success color */
+  --middle-blue-color: #d7eae5; /* Define success color */
+  --dark-color: #1a1e29; /* Define error color */
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

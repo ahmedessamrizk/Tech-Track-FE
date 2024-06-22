@@ -1,0 +1,47 @@
+.single-data-field {
+  width: 45%;
+  text-transform: capitalize;
+  font-family: "CustomFont2", Arial, sans-serif;
+  margin: 20px;
+}
+.email-profile {
+  width: 45%;
+}
+.email-profile h2 {
+  text-transform: none !important;
+}
+.single-data-field p {
+  padding: 10px 0px;
+  font-size: 1.2rem;
+}
+.single-data-field h2 {
+  background-color: var(--light-blue-color);
+  color: var(--dark-gray-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray-color);
+}
+@media (max-width: 1200px) {
+  .single-data-field {
+    width: 40%;
+  }
+  .email-profile {
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .single-data-field {
+    width: 40%;
+  }
+  .email-profile {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .single-data-field {
+    width: 80%;
+  }
+  .single-data-field h2 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.all-products {
+  display: flex;
+  margin-top: 67px;
+}
+.content {
+  width: 75%;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}

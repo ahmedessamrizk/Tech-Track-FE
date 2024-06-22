@@ -1,0 +1,115 @@
+.signUp {
+  font-size: 62px;
+  font-family: "CustomFont2", Arial, sans-serif;
+  padding-bottom: 10px;
+}
+.have-account {
+  font-size: 20px !important;
+  color: var(--middle-gray-color);
+  font-weight: bold;
+  font-family: "CustomFont6", Arial, sans-serif;
+}
+.have-account a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.name-input-container {
+  display: flex;
+  gap: 10%;
+}
+.name {
+  width: 35%;
+}
+.name-input {
+  padding: 10px 40px 10px 10px !important;
+  width: 100% !important;
+}
+.name-input-email {
+  padding: 10px 40px 10px 10px !important;
+}
+.signUp-password {
+  margin-top: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0 !important;
+}
+.error {
+  font-family: "CustomFont6", Arial, sans-serif;
+  width: 80%;
+  color: rgb(197, 69, 69);
+  font-size: 24px;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .have-account {
+    font-size: 18px !important;
+  }
+  .signUp {
+    font-size: 52px;
+  }
+}
+@media (max-width: 1200px) {
+  .have-account {
+    font-size: 16px !important;
+  }
+  .signUp {
+    font-size: 44px;
+  }
+}
+@media (max-width: 992px) {
+  .have-account {
+    font-size: 16px !important;
+  }
+  .signUp {
+    font-size: 36px;
+  }
+  .authentication-side {
+    width: 50%;
+  }
+  .authentication-image {
+    width: 50%;
+    align-self: center;
+  }
+  .single-input p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .have-account {
+    font-size: 16px;
+  }
+  .signUp {
+    font-size: 50px;
+  }
+  .authentication-image {
+    display: none;
+  }
+  .authentication-side {
+    width: 100%;
+  }
+  .authentication-container {
+    padding: 0px 40px;
+  }
+  .single-input input {
+    width: 100%;
+  }
+  .input-icon span {
+    right: 0;
+  }
+  .forget a {
+    right: 0%;
+  }
+  .authentication-action button {
+    width: 100%;
+  }
+  .name {
+    width: 50%;
+  }
+}
+@media (max-height: 700px) {
+  .signUp-responsive {
+    height: auto !important;
+  }
+}

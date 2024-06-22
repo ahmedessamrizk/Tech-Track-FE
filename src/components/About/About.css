@@ -1,0 +1,196 @@
+.about {
+  text-align: center;
+  font-size: 26px;
+  font-family: "CustomFont4";
+  margin: 67px 0px;
+}
+.about-us {
+  height: calc(100vh - 67px);
+  background-image: url(../../asserts/about.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--primary-color);
+}
+.about-us-content {
+  width: 50%;
+  text-align: start;
+  margin-left: 14px;
+}
+.about-us-content h1 {
+  text-transform: uppercase;
+  font-size: 90px;
+  font-family: "CustomFont";
+}
+.about-us-content p {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "CustomFont2";
+}
+.our-mission,
+.what-we-do,
+.why-choose-us,
+.get-in-touch {
+  margin: 20px auto 30px;
+  width: 80%;
+}
+.our-mission h2,
+.what-we-do h2,
+.why-choose-us h2,
+.get-in-touch h2 {
+  text-transform: capitalize;
+  font-size: 70px;
+  font-family: "CustomFont3";
+  margin: 10px;
+}
+.our-mission p,
+.what-we-do p,
+.why-choose-us p,
+.get-in-touch p {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "CustomFont2";
+}
+.our-unique-features {
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  color: white;
+  text-align: start;
+  padding: 30px 50px;
+  box-shadow: 0px 0px 10px var(--middle-gray-color);
+}
+.our-unique-features h2 {
+  text-transform: capitalize;
+  font-size: 60px;
+  font-family: "CustomFont3";
+  padding: 0px 0px 30px;
+}
+.our-unique-features li {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "CustomFont2";
+  padding-left: 10px;
+}
+.our-unique-features ul {
+  list-style: none;
+}
+.our-unique-features ul li::marker {
+  content: "•";
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+@media (max-width: 1200px) {
+  .about-us-content h1 {
+    font-size: 70px;
+  }
+  .about-us-content p {
+    font-size: 24px;
+  }
+  .our-mission h2,
+  .what-we-do h2,
+  .why-choose-us h2,
+  .get-in-touch h2 {
+    font-size: 60px;
+  }
+  .our-mission p,
+  .what-we-do p,
+  .why-choose-us p,
+  .get-in-touch p {
+    font-size: 24px;
+  }
+  .our-unique-features h2 {
+    font-size: 50px;
+  }
+  .our-unique-features li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us-content h1 {
+    font-size: 60px;
+  }
+  .about-us-content p {
+    font-size: 22px;
+  }
+  .our-mission h2,
+  .what-we-do h2,
+  .why-choose-us h2,
+  .get-in-touch h2 {
+    font-size: 50px;
+  }
+  .our-mission p,
+  .what-we-do p,
+  .why-choose-us p,
+  .get-in-touch p {
+    font-size: 20px;
+  }
+  .our-unique-features h2 {
+    font-size: 50px;
+  }
+  .our-unique-features li {
+    font-size: 18px;
+  }
+  .our-unique-features ul li::marker {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-content h1 {
+    font-size: 50px;
+  }
+  .about-us-content p {
+    font-size: 18px;
+  }
+  .our-mission h2,
+  .what-we-do h2,
+  .why-choose-us h2,
+  .get-in-touch h2 {
+    font-size: 40px;
+  }
+  .our-mission p,
+  .what-we-do p,
+  .why-choose-us p,
+  .get-in-touch p {
+    font-size: 16px;
+  }
+  .our-unique-features h2 {
+    font-size: 40px;
+  }
+  .our-unique-features li {
+    font-size: 16px;
+  }
+  .our-unique-features ul li::marker {
+    font-size: 20px;
+  }
+}
+@media (max-height: 500px) {
+  .about-us-content h1 {
+    font-size: 40px;
+  }
+  .about-us-content p {
+    font-size: 16px;
+  }
+  .our-mission h2,
+  .what-we-do h2,
+  .why-choose-us h2,
+  .get-in-touch h2 {
+    font-size: 30px;
+  }
+  .our-mission p,
+  .what-we-do p,
+  .why-choose-us p,
+  .get-in-touch p {
+    font-size: 14px;
+  }
+  .our-unique-features h2 {
+    font-size: 30px;
+  }
+  .our-unique-features li {
+    font-size: 14px;
+  }
+  .our-unique-features ul li::marker {
+    font-size: 18px;
+  }
+}
