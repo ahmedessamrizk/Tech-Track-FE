@@ -49,12 +49,14 @@ export default function Home() {
             });
             resizeObserver.observe(storesRef.current);
         }
-    }, [storesRef.current]);
+    }, []);
+
     const handleSearch = function (e) {
         e.preventDefault()
         const searchWord = inputRef.current.value.trim();
         navigate(`/categories/${searchWord}?page=1`)
     }
+
     useEffect(() => {
         // console.log('useEffect home page entered');
         window.scrollTo(0, 0);
