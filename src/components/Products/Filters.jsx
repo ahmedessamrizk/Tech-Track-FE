@@ -95,7 +95,7 @@ export default function Filters() {
                 resizeObserver.observe(recommendationRef.current);
             }
         }
-    }, [recommendationRef.current, recommended]);
+    }, [recommended]);
     useEffect(() => {
         async function getRecommendations() {
             const token = getToken();

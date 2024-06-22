@@ -13,7 +13,7 @@ export default async function handleForget({ request }) {
         redirect: 'follow'
     };
 
-    const result = await fetch("https://techtrack-be.vercel.app/api/v1/users/forgotPassword", requestOptions);
+    await fetch("https://techtrack-be.vercel.app/api/v1/users/forgotPassword", requestOptions);
 
     return 'submitted'
 }

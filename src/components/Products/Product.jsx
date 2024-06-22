@@ -101,7 +101,7 @@ export default function Product() {
             });
             resizeObserver.observe(recommendationRef.current);
         }
-    }, [recommendationRef.current]);
+    }, []);
 
     const handleError = (event) => {
         let imageSrc;
