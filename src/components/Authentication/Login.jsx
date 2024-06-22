@@ -33,11 +33,13 @@ export default function Login() {
 
     const [profileFavorites, setProfileFavorites] = useOutletContext();
     console.log(profileFavorites);
-    if (action && action.success === true) {
-        const userFavorites = JSON.parse(localStorage.getItem('userFavorites'));
-        setProfileFavorites(userFavorites)
-        navigate('/');
-    }
+    useEffect(() => {
+        if (action && action.success === true) {
+            const userFavorites = JSON.parse(localStorage.getItem('userFavorites'));
+            setProfileFavorites(userFavorites);
+            navigate('/');
+        }
+    }, [action, setProfileFavorites, navigate]);
     return (
         <>
             <section className="authentication-container">
