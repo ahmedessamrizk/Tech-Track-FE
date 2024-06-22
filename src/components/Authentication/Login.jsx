@@ -31,7 +31,8 @@ export default function Login() {
         window.scrollTo(0, 0);
     }, [])
 
-    const [setProfileFavorites] = useOutletContext();
+    const [profileFavorites, setProfileFavorites] = useOutletContext();
+    console.log(profileFavorites);
     if (action && action.success === true) {
         const userFavorites = JSON.parse(localStorage.getItem('userFavorites'));
         setProfileFavorites(userFavorites)
