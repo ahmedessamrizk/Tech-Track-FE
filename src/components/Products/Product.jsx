@@ -42,11 +42,9 @@ export default function Product() {
     const role = JSON.parse(localStorage.getItem('userRole'));
     const [profileFavorites, setProfileFavorites] = useOutletContext();
     const { product } = useRouteLoaderData('product');
-
-
-
     const tempArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+    const compareProducts = JSON.parse(localStorage.getItem('compareProducts'));
     const [addedToRecommendation, setAddedToRecommendation] = useState(false);
     useEffect(() => {
         setAddedToRecommendation(false);
@@ -115,6 +113,9 @@ export default function Product() {
                 }
             });
             resizeObserver.observe(recommendationRef.current);
+        }
+        if (compareProducts.filter(pro => pro._id === product._id).length !== 0) {
+            setAddedToRecommendation(true)
         }
     }, []);
 
