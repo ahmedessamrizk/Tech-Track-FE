@@ -47,8 +47,13 @@ export default function Product() {
     const compareProducts = JSON.parse(localStorage.getItem('compareProducts'));
     const [addedToRecommendation, setAddedToRecommendation] = useState(false);
     useEffect(() => {
-        setAddedToRecommendation(false);
-    }, [product._id]);
+        if (compareProducts.filter(pro => pro._id === product._id).length !== 0) {
+            setAddedToRecommendation(true);
+        }
+        else {
+            setAddedToRecommendation(false);
+        }
+    }, [product._id, compareProducts]);
     function addToCompare(product) {
         localStorage.setItem('compareProducts', localStorage.getItem('compareProducts') === null ? JSON.stringify([product]) : JSON.stringify([...JSON.parse(localStorage.getItem('compareProducts')), product]))
         setAddedToRecommendation(prevState => !prevState)
@@ -114,9 +119,7 @@ export default function Product() {
             });
             resizeObserver.observe(recommendationRef.current);
         }
-        if (compareProducts.filter(pro => pro._id === product._id).length !== 0) {
-            setAddedToRecommendation(true)
-        }
+
     }, []);
 
     const handleError = (event) => {
