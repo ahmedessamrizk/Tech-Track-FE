@@ -17,14 +17,6 @@ export default function NavBar() {
             <nav>
                 <div className="logo">
                     <img src={logoImg} alt="" />
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="49.687" height="43.001" viewBox="0 0 49.687 43.001">
-                        <g id="Group_133" data-name="Group 133" transform="translate(-873.083 -386.475)">
-                            <path id="Path_2236" data-name="Path 2236" d="M922.14,386.475H873.719a.556.556,0,0,0-.636.624v6.98a.56.56,0,0,0,.636.63H884.61a.333.333,0,0,1,.38.374v33.763a.56.56,0,0,0,.636.63h8.04a.56.56,0,0,0,.636-.63V395.083l.006-.374a3.624,3.624,0,0,1,6.181-2.4,3.563,3.563,0,0,1,1.06,2.4l.006.374v33.763a.556.556,0,0,0,.63.63h8.046a.559.559,0,0,0,.63-.63V395.083a.335.335,0,0,1,.381-.374h10.9a.558.558,0,0,0,.63-.63V387.1A.554.554,0,0,0,922.14,386.475Z" transform="translate(0 0)" fill="#132d46" />
-                            <path id="Path_2237" data-name="Path 2237" d="M914.281,418.866a3.448,3.448,0,0,1-6.9,0,3.448,3.448,0,1,1,6.9,0Z" transform="translate(-12.907 -10.889)" fill="#132d46" />
-                            <path id="Path_2238" data-name="Path 2238" d="M912.908,421.019v-.206a1.523,1.523,0,0,1,.006-.168" transform="translate(-14.985 -12.857)" fill="#132d46" />
-                            <path id="Path_2239" data-name="Path 2239" d="M912.914,421.019v-.206a1.523,1.523,0,0,0-.006-.168" transform="translate(-14.985 -12.857)" fill="#132d46" />
-                        </g>
-                    </svg> */}
                 </div>
                 <div className="links">
                     <ul>

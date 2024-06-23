@@ -43,11 +43,26 @@ export default function Product() {
     const [profileFavorites, setProfileFavorites] = useOutletContext();
     const { product } = useRouteLoaderData('product');
 
+
+
     const tempArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+    const [addedToRecommendation, setAddedToRecommendation] = useState(false);
+    useEffect(() => {
+        setAddedToRecommendation(false);
+    }, [product._id]);
     function addToCompare(product) {
         localStorage.setItem('compareProducts', localStorage.getItem('compareProducts') === null ? JSON.stringify([product]) : JSON.stringify([...JSON.parse(localStorage.getItem('compareProducts')), product]))
+        setAddedToRecommendation(prevState => !prevState)
     }
+
+    function removeToCompare(product) {
+        const compareProducts = JSON.parse(localStorage.getItem('compareProducts'));
+        console.log(compareProducts);
+        localStorage.setItem('compareProducts', JSON.stringify(compareProducts.filter(pro => pro._id !== product._id)))
+        setAddedToRecommendation(prevState => !prevState)
+    }
+
     async function remove(id) {
         removeFromFavorite(id, setProfileFavorites);
     }
@@ -221,7 +236,7 @@ export default function Product() {
                             <h2 className='before-sale'>{product.sale !== 0 && Math.ceil(product.price / (1 - (product.sale / 100)))}</h2>
                         </div>
                         <div className="actions">
-                            <button className='add-product' onClick={() => addToCompare(product)}>Add to compare</button>
+                            <button className={`add-product ${addedToRecommendation && 'added'}`} onClick={() => { addedToRecommendation ? removeToCompare(product) : addToCompare(product) }}>{addedToRecommendation ? 'Remove from compare' : 'Add to compare'}</button>
                             {token && role === 'user' && <Link to={'rate'} className='rate-product'>Rate</Link>}
                         </div>
                         <div className="technical-support">
