@@ -127,9 +127,13 @@ export async function changeAction({ request }) {
     if (raw.password !== raw.passwordConfirm) {
         return { error: "passwords doesn't match" }
     }
+
     const response = await fetch("https://techtrack-be.vercel.app/api/v1/users/changeMyPassword", requestOptions);
     const result = await response.json();
+    console.log(result);
     if (result.status === 'error') {
+        return { error: result.message }
+    } else if (result.status === 'fail') {
         return { error: result.message }
     }
     localStorage.setItem('userToken', JSON.stringify(result.token))

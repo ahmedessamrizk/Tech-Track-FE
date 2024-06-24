@@ -96,7 +96,7 @@ export default function BackDropWindow() {
                 </div>
                 <div className="field">
                     <label>rating :</label>
-                    <input type="number" min={1} max={5} name='rate' defaultValue={url.pathname.includes('edit') ? searchParams.get('rate') : null} />
+                    <input type="number" min={1} max={5} name='rate' defaultValue={url.pathname.includes('edit') ? searchParams.get('rate') : null} placeholder={url.pathname.includes('edit') ? null : 'rate from 1 to 5'} />
                 </div>
                 <div className="field">
                     <label>comment :</label>

@@ -7,12 +7,16 @@ export default async function signUpAction({ request }) {
     if (data.get('phone').length !== 11) {
         return { error: "phone number must be 11 digits" }
     }
+    console.log(data.get('gender').toLowerCase());
+    if (data.get('gender').toLowerCase() !== 'male' && data.get('gender').toLowerCase() !== 'female') {
+        return { error: "gender must be male or female" }
+    }
     const raw = {
         name: `${data.get('firstName') + ' ' + data.get('lastName')}`.trim(),
         email: data.get('email'),
         password: data.get('password'),
         passwordConfirm: data.get('passwordConfirm'),
-        gender: data.get('gender'),
+        gender: data.get('gender').toLowerCase(),
         phone: data.get('phone').slice(-10),
     }
     var requestOptions = {

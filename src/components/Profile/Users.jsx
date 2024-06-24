@@ -7,6 +7,7 @@ import { getToken } from '../../utils/tokenFunctions';
 
 export default function Users() {
     const data = useLoaderData();
+    console.log(data);
     const navigate = useNavigate();
     async function deleteUser(id) {
         const token = JSON.parse(getToken());
