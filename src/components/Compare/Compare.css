@@ -273,3 +273,34 @@
     justify-content: flex-start;
   }
 }
+@media (max-width: 500px) {
+  .first-row img {
+    width: 100px;
+    height: 100px;
+  }
+  .compare-side {
+    left: -80%;
+    width: 80%;
+  }
+  .show-side {
+    left: 0;
+  }
+  .icon-transition {
+    left: 80%;
+  }
+  .compare-table h3 {
+    letter-spacing: 0px;
+    font-size: 12px;
+  }
+  .compare-table h4 {
+    letter-spacing: 0px;
+    font-size: 10px;
+  }
+  .first-row img {
+    width: 100px;
+    height: 100px;
+  }
+  .first-row h2 {
+    font-size: 14px;
+  }
+}

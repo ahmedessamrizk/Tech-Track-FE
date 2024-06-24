@@ -45,3 +45,20 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 500px) {
+  .single-data-field {
+    width: 100%;
+  }
+  .single-data-field h2 {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  .email-profile h2 {
+    font-size: 10px !important;
+    padding: 10px 2px !important;
+  }
+  .single-data-field p {
+    padding: 10px 0px;
+    font-size: 1rem;
+  }
+}

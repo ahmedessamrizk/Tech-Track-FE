@@ -57,6 +57,11 @@
 .delete-button {
   color: brown;
 }
+@media (max-width: 1200px) {
+  .ratings {
+    width: calc(100% - 280px);
+  }
+}
 @media (max-width: 992px) {
   .rating-title {
     width: 40%;
@@ -104,13 +109,40 @@
   }
   .rating-details {
     width: 100%;
+    text-align: center;
   }
   .rating-details-stars {
     display: flex;
     justify-content: center;
   }
   .ratings {
+    width: calc(100% - 200px);
     padding: 20px;
     margin: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .ratings {
+    width: calc(100% - 100px);
+    padding: 10px;
+  }
+  .rating-title {
+    padding: 5px;
+  }
+  .rating-title div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rating-title h2 {
+    display: none;
+    font-size: 16px;
+  }
+  .rating-details p {
+    font-size: 14px;
+  }
+  .single-rating button {
+    padding: 5px;
+    font-size: 14px;
   }
 }

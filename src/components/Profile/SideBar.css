@@ -128,3 +128,33 @@
     font-size: 16px;
   }
 }
+@media (max-width: 500px) {
+  .profile-sidebar {
+    width: 100px;
+  }
+  .profile-list h2 {
+    font-size: 10px;
+    width: 100%;
+    padding: 5px 5px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .profile-list-item li {
+    font-size: 12px;
+    margin: 2px 0px;
+  }
+  .profile-list-items {
+    margin: 15px 0px;
+  }
+  .profile-image {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  .profile-image img {
+    padding: 0px 0px;
+    width: 60px;
+    height: 60px;
+    margin: 20px 0px;
+  }
+}

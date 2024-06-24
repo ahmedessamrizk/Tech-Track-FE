@@ -279,3 +279,58 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .filters {
+    width: 40%;
+  }
+  .filter h2 {
+    font-size: 14px;
+  }
+  .single-check-box label,
+  .input-price label {
+    font-size: 10px;
+  }
+  .single-check-box {
+    width: 100%;
+  }
+  .filters-submit h2 {
+    font-size: 12px;
+    width: 100%;
+    border-bottom: 2px solid var(--light-gray-color);
+    border-right: 0px solid var(--light-gray-color);
+  }
+  .show {
+    width: 32%;
+  }
+  .recommendation-icons {
+    display: block;
+  }
+  .input-price {
+    flex-wrap: wrap;
+  }
+  .input-price .start-price,
+  .input-price .end-price {
+    width: 100%;
+  }
+  .filters-header {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .filters-header h1 {
+    padding: 0px 5px;
+  }
+  .filters-header span {
+    font-size: 16px;
+    padding: 10px 0px 0px;
+  }
+  .show {
+    width: 42%;
+  }
+  .input-price .start-price,
+  .input-price .end-price {
+    width: 100%;
+  }
+  .temp-div h2 {
+    font-size: 14px;
+  }
+}

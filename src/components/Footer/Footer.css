@@ -75,3 +75,39 @@
     font-size: 14px;
   }
 }
+@media (max-width: 500px) {
+  .Footer-container {
+    padding: 10px 5px;
+  }
+  .aboutSpan {
+    font-size: 10px;
+  }
+  .Footer-about,
+  .Footer-support,
+  .Footer-FAQ {
+    margin: 0px 10px;
+  }
+  .Footer-about h2,
+  .Footer-support h2,
+  .footer-half2 h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .Footer-container {
+    padding: 10px 5px;
+  }
+  .aboutSpan {
+    font-size: 8px;
+  }
+  .Footer-about,
+  .Footer-support,
+  .Footer-FAQ {
+    margin: 0px 10px;
+  }
+  .Footer-about h2,
+  .Footer-support h2,
+  .footer-half2 h2 {
+    font-size: 12px;
+  }
+}

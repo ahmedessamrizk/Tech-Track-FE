@@ -11,3 +11,8 @@
   align-items: center;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .content {
+    width: 60%;
+  }
+}

@@ -206,3 +206,26 @@
     font-size: 14px;
   }
 }
+@media (max-width: 500px) {
+  .backDrop-header h2 {
+    font-size: 1rem;
+  }
+  .backDrop-header p {
+    font-size: 0.7rem;
+  }
+  .field label {
+    font-size: 12px;
+  }
+  .field input {
+    padding: 10px 40px 10px 10px;
+    font-size: 12px;
+  }
+  .field textarea {
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+  }
+  .modal form button {
+    margin: 0px 5px 10px;
+    font-size: 14px;
+  }
+}

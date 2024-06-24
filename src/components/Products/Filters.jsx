@@ -1029,7 +1029,7 @@ export default function Filters() {
                             </NavLink>
                             <div className="search-recommendation-details">
                                 <div className="recommendation-icons">
-                                    <span><Rating name="read-only" value={singleRec.Rate_Avg} readOnly /></span>
+                                    <span><Rating name="read-only" value={singleRec.Rate_Avg} readOnly size={`${maxRec === 1 ? "small" : ''}`} /></span>
                                     <span onClick={() => handleDeleteRecommendation(singleRec._id)}><CloseIcon className='close' /></span>
                                 </div>
                                 <div className='recommendation-link'>

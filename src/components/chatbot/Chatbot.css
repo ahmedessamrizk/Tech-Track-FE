@@ -170,7 +170,7 @@
 }
 @media (max-height: 500px) {
   .chatbot .chat {
-    height: 200px;
+    height: 250px;
   }
 }
 @media (min-height: 900px) {
@@ -181,5 +181,10 @@
 @media (min-height: 1100px) {
   .chatbot .chat {
     height: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .chat-bot-content {
+    width: 80%;
   }
 }

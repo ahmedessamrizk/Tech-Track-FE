@@ -176,3 +176,47 @@
     border-bottom-right-radius: 15px;
   }
 }
+@media (max-width: 500px) {
+  .navbar {
+    padding: 5px 5px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .links ul li {
+    margin: 0 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .links ul li button {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .login-signUp ul li {
+    font-size: 10px;
+  }
+  .login-button {
+    padding: 0px 4px 0px 8px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .login-button button {
+    font-size: 10px;
+  }
+
+  .signUp-button {
+    padding: 0px 8px 0px 4px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .logo img {
+    width: 30px;
+  }
+}

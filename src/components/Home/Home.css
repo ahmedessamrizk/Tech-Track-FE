@@ -176,3 +176,27 @@
     width: 50%;
   }
 }
+@media (max-width: 500px) {
+  .search-content h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .search .search-button button {
+    width: 40%;
+    font-size: 18px;
+  }
+  .search input {
+    font-size: 10px;
+    letter-spacing: 0px;
+    padding: 15px 42% 15px 20px;
+    border-radius: 24px;
+  }
+  .single-store {
+    width: 100%;
+  }
+  .product h2 {
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+}

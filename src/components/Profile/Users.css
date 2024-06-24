@@ -36,6 +36,9 @@
   transform: scale(1.2);
 }
 @media (max-width: 1200px) {
+  .users-section {
+    width: calc(100% - 280px);
+  }
   .single-user {
     font-family: "CustomFont2", Arial, sans-serif;
     text-align: center;
@@ -60,5 +63,19 @@
 @media (max-width: 768px) {
   .single-user h2 {
     font-size: 14px;
+  }
+  .users-section {
+    width: calc(100% - 200px);
+  }
+}
+@media (max-width: 500px) {
+  .single-user {
+    padding: 5px;
+  }
+  .single-user h2 {
+    font-size: 10px;
+  }
+  .users-section {
+    width: calc(100% - 100px);
   }
 }

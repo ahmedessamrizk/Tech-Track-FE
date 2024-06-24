@@ -103,3 +103,33 @@
     margin: auto;
   }
 }
+@media (max-width: 500px) {
+  .profile-content button {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  .profile-content {
+    width: calc(100% - 100px);
+  }
+  .email-update {
+    width: 100% !important;
+  }
+  .profile-content h1 {
+    font-size: 14px;
+  }
+  .error-buttons-update .validationError {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .validationErrorContainer {
+    width: 100%;
+  }
+  .error-buttons-update {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .buttons {
+    margin: auto;
+  }
+}
