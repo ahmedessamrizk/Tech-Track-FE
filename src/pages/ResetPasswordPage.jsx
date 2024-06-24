@@ -1,7 +1,8 @@
 
 export default async function resetAction({ request }) {
     // console.log('handle reset action entered');
-
+    const searchParams = new URL(request.url).searchParams;
+    const token = searchParams.get("token");
     const data = await request.formData();
     const raw = {
         password: data.get('password'),
@@ -18,7 +19,7 @@ export default async function resetAction({ request }) {
     if (raw.password !== raw.passwordConfirm) {
         return { error: "passwords doesn't match" }
     }
-    const response = await fetch("https://techtrack-be.vercel.app/api/v1/users/resetPassword/ebba0416199f7b316e8ae723084c66fadeb01456de9b1d0177ed31f44ac1525d", requestOptions);
+    const response = await fetch(`https://techtrack-be.vercel.app/api/v1/users/resetPassword/${token}`, requestOptions);
     const result = await response.json();
     if (result.status === 'error') {
         return { error: result.message, success: false }
